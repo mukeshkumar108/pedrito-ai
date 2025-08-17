@@ -55,7 +55,7 @@ if prompt := st.chat_input("Escribe tu mensaje..."):
             # Now securely reading the API key from secrets.toml
             OPENROUTER_API_KEY = st.secrets.OPENROUTER_API_KEY
             # Model name changed to Llama 4 Scout as requested
-            model_name = "meta-llama/llama-4-scout"
+            model_name = "openai/gpt-4o-mini"
 
             headers = {
                 "Authorization": f"Bearer {OPENROUTER_API_KEY}",
